@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שיגור הובלות</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="manifest" href="manifest.json">
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+
+<div class="container">
+
+    <header class="card-red">
+        <h3>שיגור הובלות</h3>
+        <p>הובלות קטנות וקווי חלוקה</p>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html" class="menu-btn">בית</a>
+        <a href="tema.html" class="menu-btn">מחירים</a>
+        <a href="#" class="menu-btn">צור קשר</a>
+    </nav>
+
+    <main>
+        <h1>אחריות - מהירות - שירות אישי</h1>
+        <p>תודה שהתקנתה שיגור לטלפון שלך. מעכשיו תמיד תהיה מעודכן</p>
+
+        <img src="shigur.jpg" class="my-image" alt="Shigur Truck">
+
+        <div class="card-white">
+            <p>
+                למה זכינו להיות במקום הראשון? בזכות השירות האדיב, האמינות והפריסה הרחבה, המקנים ללקוחותינו את השירות האיכותי ביותר במחיר הנמוך ביותר בישראל. מדברים גם ביידיש! שומרים שבת ו עושים הכל עם הלב
+            </p>
+        </div>
+
+        <h3>קצת חיזוקים מצדיקי הדורות</h3>
+
+        <div class="card-red quote-box">
+            דַּע כִּי יֵשׁ יִרְאוֹת נְפוּלוֹת וְכָל הַיִּסּוּרִים וְהַדִּינִים שֶׁיֵּשׁ לָאָדָם כֻּלָּם הֵם מֵהַיִּרְאוֹת הַנְּפוּלוֹת שֶׁנָּפְלוּ לְתוֹך זֶה הַדָּבָר שֶׁהוּא מִתְפַּחֵד וְיֵשׁ לוֹ יִסּוּרִים מִמֶּנּוּ
+        </div>
+    </main>
+
+    <footer class="footer-text">
+        <p>
+            לינק להתקנה בטלפון - מיני אפליקציה שלנו בשתי קליקים. לפתוח בדפדפן חרום ולהמתין כמה שניות. אם אין שינוי לחץ על שלוש נקודות למעלה ובחר להתקין אפליקציה
+        </p>
+        <a href="https://bekeshertov-oss.github.io/shigur/">https://bekeshertov-oss.github.io/shigur/</a>
+    </footer>
+
+</div>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+      .then(() => console.log("Service Worker registered"))
+      .catch(err => console.log("SW error:", err));
+  }
+</script>
+
+</body>
+</html>
